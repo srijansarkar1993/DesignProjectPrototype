@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Three.js</title>
+    <style>
+      body {
+        overflow: hidden;
+        margin: 0px;
+      }
+
+      #container {
+        display: flex;
+        height: 100vh;
+        border: 1px solid #ccc;
+        padding: 10px;
+      }
+
+      #threeDimensionalMap,
+      #twoDimensionalMap {
+        flex: 1;
+        height: 100%;
+        border: 1px solid #ccc;
+        padding: 10px;
+      }
+
+      #threeDimensionalMap {
+        position: relative;
+        width: 100%;
+        height: 50vh;
+        z-index: 1;
+      }
+
+      #twoDimensionalMap {
+        position: relative;
+        width: 100%;
+        height: 50vh;
+        z-index: 0;
+      }
+
+      @media only screen and (max-width: 768px) {
+        #container {
+          flex-direction: column;
+        }
+
+        #threeDimensionalMap,
+        #twoDimensionalMap {
+          height: 50vh;
+          width: 100%;
+        }
+      }
+    </style>
+    <script type="module" src="bundle.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBI8JKZ36ZlFkRG8Bsd0T_a3bPgXYkEwAw"></script>
+  </head>
+  <body>
+    <div id="container">
+      <div id="threeDimensionalMap"></div>
+      <div id="twoDimensionalMap"></div>
+    </div>
+  </body>
+</html>
+
+
+
+
+
+
+<!-- AIzaSyBI8JKZ36ZlFkRG8Bsd0T_a3bPgXYkEwAw
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Three.js</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="bundle.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBI8JKZ36ZlFkRG8Bsd0T_a3bPgXYkEwAw"></script>
+  </head>
+  <body>
+    <div id="container">
+      <div id="threeDimensionalMap"></div>
+      <div id="twoDimensionalMap"></div>
+    </div>
+  </body>
+</html> -->

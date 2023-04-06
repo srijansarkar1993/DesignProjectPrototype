@@ -1,0 +1,21 @@
+body {
+    overflow: hidden;
+    margin: 0px;
+}
+
+#container {
+    display: flex;
+    height: 100vh;
+}
+
+#threeDimensionalMap,
+#twoDimensionalMap {
+    flex: 1;
+    height: 100%;
+}
+
+#threeDimensionalMapInCircle1 {
+    position: absolute;
+    z-index: 9999;
+    /* or any other high value */
+}
